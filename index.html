@@ -18,22 +18,14 @@
         <div>
             <h2 class="titulo">Qual jogo?</h2>
             <div id="imgs">
-                <img src="imagens/FIFA.jpg" alt="FIFA 23"><img src="imagens/minecraft.jpg" alt="Minecraft">
+                <img src="imagens/FIFA.jpg" alt="FIFA 23" onclick="fifa()"><img src="imagens/minecraft.jpg" alt="Minecraft" onclick="minecraft()">
             </div>
-            <p><small>*Poucos opções por ser uma beta de uma programador iniciante &#x1F44D</small></p>
+            <p class="obs"><small class="obs">*Poucos opções por ser uma beta de uma programador iniciante &#x1F44D</small></p>
         </div>
-        <button></button>
     </main>
     <footer>
-
+        <p><small>Criado por <strong><a href="https://github.com/M1guel-cb" rel="external" target="_blank">M1guel.cb</a></strong></small></p>
     </footer>
-    <script>
-        var nome = prompt('Bem-vindo ao site! Qual é o seu nome?');
-        var res = document.getElementById('boas-vindas')
-        res.innerHTML = `<p>Bem-vindo, <strong>${nome}</strong>, este é um site destinado a te ajudar naquele momento em que você já não sabe mais o que fazer no Minecraft por exemplo, ou então, não consegue ser criativo o suficiente para pensar em uma carreira no FIFA, dentre outros casos. Por isso, criei este site.</p>
-        
-        <p>Vamos lá!</p>`;
-    </script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

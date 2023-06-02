@@ -49,25 +49,22 @@ main {
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.325);
 }
 
-main > div > p {
+#inicio {
     text-align: justify;
     padding: 30px;
     line-height: 1.5em;
     font-size: 1.2em;
 }
 
-main > div > h2 {
-    text-align: justify;
-    margin: 10px;
-    padding: 10px 15px;
-    line-height: 1.5em;
-    border-radius: 15px;
-}
-
 .titulo {
     background-image: linear-gradient(to right, var(--cor5)50%, transparent);
-    margin: 0px 15px;
     color: white;
+    text-align: justify;
+    margin: 0px;
+    padding: 10px 15px;
+    padding-left: 30px;
+    line-height: 1.5em;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.429);
 }
 
 #imgs {
@@ -81,6 +78,35 @@ img {
     margin: 30px 15px;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 small {
     font-size: 0.6em;
+    padding: 30px;
+}
+
+.obs {
+    display: block;
+}
+
+footer {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: var(--cor5);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
