@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Criativômetro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <h1>Criativômetro</h1>
+    </header>
+    <main>
+        <div id="boas-vindas"></div>
+        <div>
+            <h2 class="titulo">Qual jogo?</h2>
+            <div id="imgs">
+                <img src="imagens/FIFA.jpg" alt="FIFA 23"><img src="imagens/minecraft.jpg" alt="Minecraft">
+            </div>
+            <p><small>*Poucos opções por ser uma beta de uma programador iniciante &#x1F44D</small></p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var nome = prompt('Bem-vindo ao site! Qual é o seu nome?');
+        var res = document.getElementById('boas-vindas')
+        res.innerHTML = `<p>Bem-vindo, <strong>${nome}</strong>, este é um site destinado a te ajudar naquele momento em que você já não sabe mais o que fazer no Minecraft por exemplo, ou então, não consegue ser criativo o suficiente para pensar em uma carreira no FIFA, dentre outros casos. Por isso, criei este site.</p>
+        
+        <p>Vamos lá!</p>`;
+    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
