@@ -23,7 +23,7 @@
     --cor5: #5C0B06;
 }
 
-body, html {
+html, body {
     height: 100vh;
     width: 100vw;
 }
