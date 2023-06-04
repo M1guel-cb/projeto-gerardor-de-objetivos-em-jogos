@@ -118,7 +118,7 @@ small {
     display: block;
 }
 
-#time {
+.time {
     line-height: 1.5em;
     font-size: 1.2em;
     text-align: justify;
@@ -139,7 +139,6 @@ footer > p {
     text-align: center;
     color: white;
     background-color: var(--cor5);
-    font-size: 0.6em;
     line-height: 1.5em;
 }
 

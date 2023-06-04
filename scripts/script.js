@@ -65,12 +65,12 @@ function fifa() {
         var quantidade_times = times_europa.length - 1; //quantidade de times
         var num_ran = parseInt(Math.random() * quantidade_times);
         var time_aleatório = times_europa[num_ran];
-        saida.innerHTML = `<p>${time_aleatório}</p>`;
+        saida.innerHTML = `<p  class="time">${time_aleatório}</p>`;
     } else if (br_eu[1].checked) {
         var quantidade_times = times_mundo.length - 1; //quantidade de times
         var num_ran = parseInt(Math.random() * quantidade_times);
         var time_aleatório = times_mundo[num_ran];
-        saida.innerHTML = `<p id="time">${time_aleatório}</p>`;
+        saida.innerHTML = `<p class="time">${time_aleatório}</p>`;
     };
 
 }
