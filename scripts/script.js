@@ -5,8 +5,9 @@ res.innerHTML = `<p id="inicio" >Bem-vindo, <strong>${nome}</strong>, este é um
 var footer = document.getElementsByTagName('footer')[0];
 var obs0 = document.getElementsByClassName('obs')[0];
 var obs1 = document.getElementsByClassName('obs')[1];
-
 var saida = document.getElementById('output');
+var opc1 = document.getElementById('opc1');
+var br_eu = document.getElementsByName('br_eu');
 
 var times_europa = [
 
@@ -39,14 +40,13 @@ var times_mundo = [
     'Benfica', 'Porto', 'Braga', 'Sporting', //Liga Portuguesa
 
     'Ajax', 'Feyenoord', 'PSV', //Eredivese
-
     'Juventus', 'Inter de Milão', 'Milan', 'Lazio', 'Roma', 'Napoli', 'Atalanta' /*Atalanta = [4] em ordem alfabética*/, 'Fiorentina', //Série A TIM
 
     'Atlético de Madrid', 'Barcelona', 'Real Madrid', 'Villareal', 'Valencia', 'Real Sociedad', 'Real Betis', 'Athletic Bilbao', 'Sevilla', //La liga
 
     'Al-Nassr',//posição [1] //Time extra kkk
 
-    'Athletico-PR', 'Atlético-MG', 'Bahia', 'Botafogo', 'Corinthians', 'Cruzeiro', 'Flamengo', 'Fluminense', 'Fortaleza', 'Grêmio', 'Internacional', 'Palmeiras', 'Bragantino', 'Santos', 'São Paulo', 'Vasco da Gama' //Brasileirão Série A
+    'Athletico-PR', 'Atlético-MG', 'Corinthians', 'Cruzeiro', 'Flamengo', 'Fluminense', 'Fortaleza', 'Grêmio', 'Internacional', 'Palmeiras', 'Bragantino', 'Santos', 'São Paulo', 'Vasco da Gama' //Brasileirão Série A
 
 ]; //Array com times do mundo
 
@@ -54,14 +54,28 @@ times_mundo = times_mundo.sort()
 times_europa = times_europa.sort()
 
 function fifa() {
+    saida.innerHTML = '';
     footer.style.display = 'block';
     obs1.style.display = 'none';
     obs0.style.display = 'none'; //tirando a observação e colocando o rodapé
-    quantidade_times = times_mundo.length - 1;
-    saida.innerHTML = `<p id="saida">Os times da lista são: ${times}</p>`;
+
+    opc1.style.display = 'block';
+
+    if (br_eu[0].checked) {
+        var quantidade_times = times_europa.length - 1; //quantidade de times
+        var time_aleatório = times_europa[(parseInt(Math.random() * quantidade_times))];
+        saida.innerHTML = time_aleatório;
+    } else if (br_eu[1].checked) {
+        var quantidade_times = times_mundo.length - 1; //quantidade de times
+        var time_aleatório = times_mundo[(parseInt(Math.random() * quantidade_times))];
+        saida.innerHTML = time_aleatório;
+    };
+
 }
 
 function minecraft() {
+    saida.innerHTML = '';
+    opc1.style.display = 'none';
     footer.style.display = 'block';
     obs1.style.display = 'none';
     obs0.style.display = 'none'; //tirando a observação e colocando o rodapé
