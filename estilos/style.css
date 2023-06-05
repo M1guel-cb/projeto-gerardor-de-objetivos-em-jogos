@@ -32,6 +32,7 @@ body {
     background-color: var(--cor2);
     height: 100vh;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header > h1 {
@@ -64,20 +65,32 @@ main {
     text-align: justify;
     padding: 5px 20px;
     padding-left: 30px;
+    margin-bottom: 10px;
 
 }
 
 input.botao {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 50px;
     text-align: center;
+    margin-bottom: 15px;
+    background-color: #7f0d07;
+    color: white;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.429);
+}
+
+input.botao:hover {
+    text-decoration: underline;
+    background-color: #A8150A;
+    transition: 0.5s;
 }
 
 #botao {
     text-align: center;
 }
 
-#opc1 {
+.opc1 {
     display: none;
 }
 
@@ -122,7 +135,7 @@ small {
     line-height: 1.5em;
     font-size: 1.2em;
     text-align: justify;
-    padding: 0px 20px 20px 30px;
+    padding: 0px 30px 20px 30px;
 }
 
 footer {
